@@ -4,6 +4,7 @@ skills for paper
 # Cursor Skills Collection
 
 这个仓库目录用于存放可复用的 Cursor Skills，支持批量导入到 Cursor 并持续更新。
+仓库地址：[zxy-0812/paper-skills](https://github.com/zxy-0812/paper-skills.git)。
 
 ## 目录结构
 
@@ -24,7 +25,7 @@ skills for paper
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File "$HOME\.cursor\update-skills.ps1" `
-  -RepoUrl "https://github.com/<your-name>/<your-skills-repo>.git" `
+  -RepoUrl "https://github.com/zxy-0812/paper-skills.git" `
   -Target global `
   -Branch main
 ```
@@ -39,7 +40,7 @@ powershell -ExecutionPolicy Bypass -File "$HOME\.cursor\update-skills.ps1" `
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File "$HOME\.cursor\update-skills.ps1" `
-  -RepoUrl "https://github.com/<your-name>/<your-skills-repo>.git" `
+  -RepoUrl "https://github.com/zxy-0812/paper-skills.git" `
   -Target project `
   -ProjectRoot "D:\dev\code\your-project" `
   -Branch main
@@ -53,14 +54,14 @@ powershell -ExecutionPolicy Bypass -File "$HOME\.cursor\update-skills.ps1" `
 
 ```powershell
 cd $HOME\.cursor
-git clone https://github.com/<your-name>/<your-skills-repo>.git skills
+git clone https://github.com/zxy-0812/paper-skills.git skills
 ```
 
 ### 项目
 
 ```powershell
 cd <your-project>\.cursor
-git clone https://github.com/<your-name>/<your-skills-repo>.git skills
+git clone https://github.com/zxy-0812/paper-skills.git skills
 ```
 
 ## 如何更新
@@ -106,3 +107,4 @@ description: Describe what this skill does and when to use it.
 ### 3) 不要放到 `skills-cursor`
 
 `skills-cursor` 是 Cursor 内置目录，不用于用户自定义 skill。
+
